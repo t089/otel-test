@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:otel-test}",
+            "name": "Debug otel-test",
+            "program": "${workspaceFolder:otel-test}/.build/debug/otel-test",
+            "preLaunchTask": "swift: Build Debug otel-test"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:otel-test}",
+            "name": "Release otel-test",
+            "program": "${workspaceFolder:otel-test}/.build/release/otel-test",
+            "preLaunchTask": "swift: Build Release otel-test"
+        }
+    ]
+}
